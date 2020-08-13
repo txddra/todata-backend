@@ -17,7 +17,9 @@ return todo.text;
  * ITERATION FUNCTIONS *
  ***********************/
 
-
+const names =function(todos){
+   return todos.map(getTodoName)
+}
 
 
 
