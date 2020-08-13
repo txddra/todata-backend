@@ -1,7 +1,9 @@
 /********************
  * HELPER FUNCTIONS *
  ********************/
-
+const getTodoName = function(todo){
+return todo.text;
+}
 
 
 
