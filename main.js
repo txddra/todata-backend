@@ -4,6 +4,9 @@
 const getTodoName = function(todo){
 return todo.text;
 }
+const getPriority = function(todo){
+return todo.priority;
+}
 
 
 
@@ -20,7 +23,11 @@ return todo.text;
 const names =function(todos){
    return todos.map(getTodoName)
 }
-
+//alternatively : 
+/*const names = function(todos ){
+return
+}
+*/
 
 
 
