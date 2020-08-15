@@ -13,7 +13,10 @@ const isComplete= function(todo){
 return todo.complete;
 }
 
-
+const isHighPriority = function(obj){
+  //based on the test 
+  return obj.priority === 2
+}
 
 
 
@@ -25,8 +28,8 @@ return todo.complete;
  * ITERATION FUNCTIONS *
  ***********************/
 
-const names =function(todos){
-   return todos.map(getTodoName)
+const names =function(obj){
+   return obj.map(getTodoName)
 }
 //alternatively : 
 /*const names = function(todos ){
@@ -34,10 +37,14 @@ return
 }
 */
 
-const priorities= function(todos){
-return todos.map(getPriority)
+const priorities= function(obj){
+return obj.map(getPriority)
 }
 
+
+const namesAndPriorities = function(){
+
+}
 
 
 
