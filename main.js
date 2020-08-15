@@ -4,8 +4,13 @@
 const getTodoName = function(todo){
 return todo.text;
 }
+
 const getPriority = function(todo){
 return todo.priority;
+}
+
+const isComplete= function(todo){
+return todo.complete;
 }
 
 
