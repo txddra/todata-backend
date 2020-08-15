@@ -29,6 +29,10 @@ return
 }
 */
 
+const priorities= function(todos){
+return todos.map(getPriority)
+}
+
 
 
 
