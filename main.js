@@ -42,12 +42,21 @@ return obj.map(getPriority)
 }
 
 
-const namesAndPriorities = function(){
+// const nameAndPriorityHelper = function(todo){
+// //return the name and priority of the todo
+
+// return `${todo.text} - ${todo.priority === 2 ? 'High' : 'Low'}`;
+
+// }
+ const justNotComplete = function(array){
+// return array.filter( isComplete)
+ }
+
+
+const justComplete =function(array){
+  return array.filter(isComplete)
 
 }
-
-
-
 
 
 
