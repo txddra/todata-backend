@@ -22,8 +22,6 @@ const isHighPriority = function(obj){
 
 
 
-
-
 /***********************
  * ITERATION FUNCTIONS *
  ***********************/
@@ -42,11 +40,16 @@ return obj.map(getPriority)
 }
 
 
-// const nameAndPriorityHelper = function(todo){
+//helper for name and priority
+const namePriorHelp = function(todo) {
+  return `${todo.text} - ${todo.priority === 2 ? 'High' : 'Low'}`
+}
+
+const namesAndPriorities = function(todo){
 // //return the name and priority of the todo
 
-// return `${todo.text} - ${todo.priority === 2 ? 'High' : 'Low'}`;
-// }
+return todo.map(namePriorHelp)
+}
 
 //helper for justNotComplete
 
