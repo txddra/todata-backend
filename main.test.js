@@ -479,7 +479,7 @@ describe('justNotComplete', () => {
       },
     ];
 
-    expect(justNotComplete(todos)).toEqual(notComplete);
+    expect(justNotComplete(todos)).toEqual(!isComplete);
   })
 
   it(`doesn't modify the original array`, () => {
