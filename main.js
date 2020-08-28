@@ -63,6 +63,14 @@ const priority2Only = function(array){
   return array.filter(isHighPriority);
 }
 
+// helper for priority 1 only
+const priorOne = function(obj){
+return obj.priority === 1;
+}
+
+ const priority1Only = function(array){
+   return array.filter(priorOne);
+ }
 
 
 
