@@ -46,10 +46,13 @@ return obj.map(getPriority)
 // //return the name and priority of the todo
 
 // return `${todo.text} - ${todo.priority === 2 ? 'High' : 'Low'}`;
-
 // }
+
+//helper for justNotComplete
+
+
  const justNotComplete = function(array){
-return !array.filter( isComplete)
+return array.complete === false
  }
 
 
