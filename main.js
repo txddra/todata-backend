@@ -49,7 +49,7 @@ return obj.map(getPriority)
 
 // }
  const justNotComplete = function(array){
-// return array.filter( isComplete)
+return !array.filter( isComplete)
  }
 
 
@@ -59,7 +59,9 @@ const justComplete =function(array){
 }
 
 
-
+const priority2Only = function(array){
+  return array.filter(isHighPriority);
+}
 
 
 
